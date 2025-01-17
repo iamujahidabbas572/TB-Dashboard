@@ -1,0 +1,410 @@
+{
+  "name": "TB Report",
+  "children": [
+    {
+      "name": "Lower-middle income",
+      "children": [
+        {
+          "name": "Angola",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 39
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 36
+            }
+          ]
+        },
+        {
+          "name": "Bangladesh",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 46
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 24
+            }
+          ]
+        },
+        {
+          "name": "Indonesia",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 55
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "name": "India",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 57
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 17
+            }
+          ]
+        },
+        {
+          "name": "Kenya",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 52
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "name": "Cambodia",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 61
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 18
+            }
+          ]
+        },
+        {
+          "name": "Lesotho",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 43
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "name": "Myanmar",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 56
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "name": "Mongolia",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 63
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "name": "Nigeria",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 43
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 16
+            }
+          ]
+        },
+        {
+          "name": "Pakistan",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 41
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "name": "Philippines",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 49
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "name": "Vietnam",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 69
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "name": "Zambia",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 45
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Upper-middle income",
+      "children": [
+        {
+          "name": "Brazil",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 75
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 12
+            }
+          ]
+        },
+        {
+          "name": "China",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 79
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 24
+            }
+          ]
+        },
+        {
+          "name": "Gabon",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 51
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "name": "Namibia",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 59
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "Russia",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 75
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "name": "Thailand",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 83
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "South-Africa",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 63
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Low income",
+      "children": [
+        {
+          "name": "CA-Republic",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 24
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "name": "DR-Congo",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 32
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "name": "Ethiopia",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 37
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "Liberia",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 38
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "name": "Mozambique",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 41
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "Sierra Leone",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 39
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 16
+            }
+          ]
+        },
+        {
+          "name": "Tanzania",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 45
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "name": "Uganda",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 46
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 15
+            }
+          ]
+        },
+        {
+          "name": "Zimbabwe",
+          "children": [
+            {
+              "name": "SDG 3.8.1",
+              "value": 56
+            },
+            {
+              "name": "SDG 3.8.2",
+              "value": 12
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

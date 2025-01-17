@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Force-Directed Graph: TB Regions</title>
+  <link rel="stylesheet" href="force.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script defer src="force.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Force-Directed Graph: TB Cases by Region</h1>
+    <div id="controls">
+      <label for="year-filter">Year:</label>
+      <input type="range" id="year-filter" min="1994" max="2020" value="2020" step="1">
+      <span id="year-display">2020</span>
+
+      <label for="metric-filter">Metric:</label>
+      <select id="metric-filter">
+        <option value="c.new.sp.tsr">New Success Rate</option>
+        <option value="c.tsr">Total Success Rate</option>
+        <option value="c.ret.tsr">Retreatment Success Rate</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <div id="chart-container">
+      <svg id="force-graph"></svg>
+    </div>
+    <div id="tooltip" class="tooltip"></div>
+  </main>
+</body>
+</html>

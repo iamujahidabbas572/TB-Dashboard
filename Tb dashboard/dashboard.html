@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TB Data Dashboard</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    /* Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+      margin-bottom: 1em;
+    }
+    header h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Filters */
+    .filters {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin: 20px;
+    }
+    .filters select,
+    .filters input {
+      padding: 5px;
+      font-size: 1em;
+    }
+
+    /* Dashboard Layout */
+    .dashboard-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1em;
+      padding: 1em;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Visualization Containers */
+    .visualization {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      background-color: white;
+    }
+    .visualization svg {
+      width: 100%;
+      height: 400px;
+    }
+
+    /* Conclusion Boxes */
+    .conclusion-box {
+      background-color: #e9ecef;
+      border-radius: 10px;
+      padding: 1em;
+      margin: 1em auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+    }
+    .conclusion-box h3 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #2c3e50;
+    }
+    .conclusion-box p {
+      font-size: 1em;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 1em;
+      font-size: 0.9em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .dashboard-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>TB Data Dashboard</h1>
+  </header>
+
+  <!-- Filters Section -->
+  <div class="filters">
+    <label for="year-slider">Year:</label>
+    <input type="range" id="year-slider" min="1994" max="2020" value="2020" step="1">
+    <span id="year-display">2020</span>
+
+    <label for="metric-filter">Metric:</label>
+    <select id="metric-filter">
+      <option value="c.new.sp.tsr">New Success Rate</option>
+      <option value="c.tsr">Total Success Rate</option>
+      <option value="c.ret.tsr">Retreatment Success Rate</option>
+    </select>
+
+    <label for="region-filter">Region:</label>
+    <select id="region-filter">
+      <option value="AMR">Americas</option>
+      <option value="EUR">Europe</option>
+      <option value="AFR">Africa</option>
+      <option value="EMR">Eastern Mediterranean</option>
+      <option value="WPR">Western Pacific</option>
+      <option value="SEA">South-East Asia</option>
+    </select>
+    <button id="apply-filter">Apply Filter</button>
+  </div>
+
+  <!-- Dashboard Visualizations -->
+  <div class="dashboard-container">
+    <div id="timeline-container" class="visualization">
+      <svg id="timeline"></svg>
+      <script src="time2.js"></script>
+    </div>
+
+    <div id="map-container" class="visualization">
+      <svg id="map"></svg>
+      <script src="map2.js"></script>
+    </div>
+
+    <div id="sun-chart" class="visualization">
+      <svg id="unique-sunburst-svg"></svg>
+      <script src="sun2.js"></script>
+    </div>
+
+    <div id="tree-container" class="visualization">
+      <svg id="treeContainer"></svg>
+      <script src="tree.js"></script>
+    </div>
+
+    <div id="chart-container" class="visualization">
+      <svg id="force-graph"></svg>
+      <script src="force.js"></script>
+    </div>
+  </div>
+
+  <!-- Key Findings Section -->
+  <div class="conclusion-box" id="box1">
+    <h3>Key Findings</h3>
+    <p><strong>India's TB and HIV Disparity:</strong> Despite a high TB-related death rate, India has significantly fewer HIV testing and treatment cases compared to global averages, suggesting underreporting or limited access to testing.</p>
+    <p><strong>Economic Inequity in Impact:</strong> TB and HIV disproportionately affect low-income populations in third-world countries, emphasizing the role of economic factors in disease prevalence and healthcare access.</p>
+    <p><strong>Testing and Treatment Gaps:</strong> African nations with high HIV prevalence often exhibit low HIV testing coverage, hindering early detection and treatment efforts.</p>
+  </div>
+
+  <!-- Proposed Solutions Section -->
+  <div class="conclusion-box" id="box3">
+    <h3>Proposed Solutions</h3>
+    <p><strong>Expanding Testing Programs:</strong> Enhance access to free or affordable HIV and TB testing in low-income, high-prevalence regions through community-driven initiatives.</p>
+    <p><strong>Integrated Care Strategies:</strong> Develop combined TB and HIV care programs to better manage co-infections and ensure comprehensive treatment.</p>
+    <p><strong>Awareness Initiatives:</strong> Launch global education campaigns to promote prevention, testing, and treatment, reducing stigma and encouraging early intervention.</p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Thanks to Ma'am Zonera and Ma'am Dania and all respected TA's</p>
+  </footer>
+
+  <script>
+    const yearSlider = document.getElementById('year-slider');
+    const yearDisplay = document.getElementById('year-display');
+
+    yearSlider.addEventListener('input', function () {
+      yearDisplay.textContent = this.value;
+    });
+
+    document.getElementById('apply-filter').addEventListener('click', function () {
+      const year = yearSlider.value;
+      const metric = document.getElementById('metric-filter').value;
+      const region = document.getElementById('region-filter').value;
+
+      console.log(`Year: ${year}, Metric: ${metric}, Region: ${region}`);
+    });
+  </script>
+</body>
+</html>

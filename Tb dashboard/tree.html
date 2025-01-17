@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchical Tree Map</title>
+    <link rel="stylesheet" href="tree.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+</head>
+<body>
+    <h1>Hierarchical Tree Map for Entity Categorization</h1>
+    <div id="tree-controls">
+        <label for="treeYearSlider">Select Year:</label>
+        <input type="range" id="treeYearSlider" min="2000" max="2020" value="2020">
+        <span id="treeYearLabel">2020</span>
+    </div>
+    <div id="treeLegend" class="tree-legend"></div>
+    <div id="treeTooltip" class="tree-tooltip"></div>
+    <div id="tree-Container">
+      <svg id="treeContainer"></svg>
+      
+    </div>
+    <script defer src="tree.js"></script>
+</body>
+</html>

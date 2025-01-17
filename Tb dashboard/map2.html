@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive TB Map Chart</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="map2.css">
+</head>
+<body>
+  <h1>Interactive Map of TB Treatment Success Rates</h1>
+
+  <!-- Filters -->
+<div id="controls">
+    <!-- <label for="yearFilter">Year:</label>
+    <select id="yearFilter"></select> -->
+  
+    <label for="countryFilter">Country:</label>
+    <select id="regionFilter"></select> 
+    
+  </div>
+  
+
+  <!-- Tooltip -->
+  <div id="tooltip" style="display: none;"></div>
+
+  <!-- Map Container -->
+  <div id="map-container">
+    <svg id="map"></svg>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="map2.js"></script>
+  
+</body>
+</html>

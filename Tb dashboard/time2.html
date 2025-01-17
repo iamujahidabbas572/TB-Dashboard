@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline Visualization - TB Treatment Data</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="time2.css">
+</head>
+<body>
+  <h1>Interactive Timeline of TB Treatment Metrics</h1>
+
+  <!-- Filters -->
+  <div id="controls">
+    <label for="countryFilter">Country:</label>
+    <select id="countryFilter"></select>
+
+    <label for="metricFilter">Metric:</label>
+    <select id="metricFilter">
+      <option value="c.new.tsr">Treatment Success Rate (TSR)</option>
+      <option value="new.sp.cur">Current Smear-Positive Cases</option>
+      <option value="new.sp.died">Deaths</option>
+    </select>
+  </div>
+
+  <!-- Tooltip -->
+  <div id="tooltip" style="display: none;"></div>
+
+  <!-- Timeline Container -->
+  <div id="timeline-container">
+    <svg id="timeline"></svg>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="time2.js"></script>
+</body>
+</html>

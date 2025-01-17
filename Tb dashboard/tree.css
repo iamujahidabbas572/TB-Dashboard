@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+#tree-controls {
+  margin: 10px;
+}
+
+#treeYearLabel {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+#treeContainer {
+  margin: 20px auto;
+  width: 900px;
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tree-tooltip {
+  position: absolute;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.tree-legend {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.tree-legend div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tree-legend span {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
